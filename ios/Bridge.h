@@ -10,4 +10,7 @@
 #define ios_Bridge_h
 
 #import "CWSAPI.h"
+#import "PTChannel.h"
+#import "PTPrivate.h"
+#import "PTUSBHub.h"
 #endif
