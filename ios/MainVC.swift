@@ -15,7 +15,8 @@ class MainViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "go" {
-            (segue.destinationViewController as CheckoutVC).item = (sender! as Item)
+            
+            (segue.destinationViewController as CheckoutVC).item = (sender as Item)
         }
     }
 }
@@ -33,7 +34,9 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("go", sender: self.db[indexPath.row])
+        var item = self.db[indexPath.row]
+        
+        self.performSegueWithIdentifier("go", sender: item)
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSizeMake(536/2, 761/2)

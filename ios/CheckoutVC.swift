@@ -18,9 +18,10 @@ class CheckoutVC: UIViewController {
     @IBOutlet var author: UILabel!
     @IBOutlet var cardIO: CardIOView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         self.cardIO.delegate = self
+        self.cardIO.hideCardIOLogo = true
     }
 }
 

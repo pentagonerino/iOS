@@ -143,7 +143,7 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="odB-G1-enu" id="WaG-4N-uAf"/>
                         <outlet property="collectionView" destination="Ves-Yv-eif" id="fme-Nv-HP4"/>
-                        <segue destination="P5S-8u-Uxf" kind="presentation" identifier="go" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="b8l-QB-XVz"/>
+                        <segue destination="P5S-8u-Uxf" kind="presentation" identifier="go" modalPresentationStyle="formSheet" modalTransitionStyle="coverVertical" id="b8l-QB-XVz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
