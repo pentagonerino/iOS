@@ -158,6 +158,9 @@ static const uint8_t kUserInfoKey;
   return delegate_;
 }
 
+-(void) listen: (void(^)(NSError *error, PTAddress *address))callback{
+    [self listenOnPort:2345 IPv4Address:INADDR_LOOPBACK callback:[callback copy]];
+}
 
 - (void)setDelegate:(id<PTChannelDelegate>)delegate {
   delegate_ = delegate;
