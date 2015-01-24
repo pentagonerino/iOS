@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92A695B21A74067D004F8481 /* Payments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A695B11A74067D004F8481 /* Payments.swift */; };
+		92A695B41A740A6E004F8481 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A695B31A740A6E004F8481 /* SweetAlert.swift */; };
 		E111DB4A1A73DFCA0008D322 /* MaisonNeue-MonoItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E111DB3E1A73DFCA0008D322 /* MaisonNeue-MonoItalic.otf */; };
 		E111DB4B1A73DFCA0008D322 /* MaisonNeue-Mono.otf in Resources */ = {isa = PBXBuildFile; fileRef = E111DB3F1A73DFCA0008D322 /* MaisonNeue-Mono.otf */; };
 		E111DB4C1A73DFCA0008D322 /* MaisonNeue-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E111DB401A73DFCA0008D322 /* MaisonNeue-MediumItalic.otf */; };
@@ -72,6 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92A695B11A74067D004F8481 /* Payments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payments.swift; sourceTree = "<group>"; };
+		92A695B31A740A6E004F8481 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SweetAlert.swift; path = ios/SweetAlert.swift; sourceTree = "<group>"; };
 		E111DB3E1A73DFCA0008D322 /* MaisonNeue-MonoItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaisonNeue-MonoItalic.otf"; sourceTree = "<group>"; };
 		E111DB3F1A73DFCA0008D322 /* MaisonNeue-Mono.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaisonNeue-Mono.otf"; sourceTree = "<group>"; };
 		E111DB401A73DFCA0008D322 /* MaisonNeue-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaisonNeue-MediumItalic.otf"; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 		E149F3EE1A73AA0D00F46C87 = {
 			isa = PBXGroup;
 			children = (
+				92A695B31A740A6E004F8481 /* SweetAlert.swift */,
 				E149F3F91A73AA0D00F46C87 /* ios */,
 				E149F40F1A73AA0E00F46C87 /* iosTests */,
 				E149F3F81A73AA0D00F46C87 /* Products */,
@@ -236,7 +241,11 @@
 				E1B80D191A73E3E0005EE8AC /* CheckoutVC.swift */,
 				E149F4CB1A73D5A700F46C87 /* Model.swift */,
 				E149F3FE1A73AA0E00F46C87 /* ViewController.swift */,
+
 				E19306471A74174900B68A41 /* PeertalkerInstance.swift */,
+
+				92A695B11A74067D004F8481 /* Payments.swift */,
+
 				E149F41C1A73AA3A00F46C87 /* Bridge.h */,
 				E149F4001A73AA0E00F46C87 /* Main.storyboard */,
 				E149F4031A73AA0E00F46C87 /* Images.xcassets */,
@@ -503,6 +512,7 @@
 			files = (
 				E149F3FF1A73AA0E00F46C87 /* ViewController.swift in Sources */,
 				E149F3FD1A73AA0E00F46C87 /* AppDelegate.swift in Sources */,
+				92A695B41A740A6E004F8481 /* SweetAlert.swift in Sources */,
 				E149F45E1A73AB1D00F46C87 /* SBJsonStreamParserAccumulator.m in Sources */,
 				E19306481A74174900B68A41 /* PeertalkerInstance.swift in Sources */,
 				E149F4611A73AB1D00F46C87 /* SBJsonStreamWriter.m in Sources */,
@@ -529,6 +539,7 @@
 				E149F4621A73AB1D00F46C87 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				E149F45A1A73AB1D00F46C87 /* NSString+Base64Encode.m in Sources */,
 				E149F4661A73AB1D00F46C87 /* SBJsonWriter.m in Sources */,
+				92A695B21A74067D004F8481 /* Payments.swift in Sources */,
 				E149F4571A73AB1D00F46C87 /* CWSTransactionReportingData.m in Sources */,
 				E149F4711A73AD1300F46C87 /* PTProtocol.m in Sources */,
 				E149F45F1A73AB1D00F46C87 /* SBJsonStreamParserAdapter.m in Sources */,
