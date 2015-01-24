@@ -25,4 +25,7 @@
 #import "PTPrivate.h"
 #import "PTUSBHub.h"
 
+#import "PTExampleProtocol.h"
+#import "Peertalker.h"
+
 #endif

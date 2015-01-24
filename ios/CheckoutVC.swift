@@ -8,9 +8,11 @@
 
 import Foundation
 
+
 class CheckoutVC: UIViewController {
     
     var item: Item?
+    let peertalker = Peertalker()
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var name: UILabel!
@@ -20,6 +22,9 @@ class CheckoutVC: UIViewController {
     @IBOutlet var precioLabel: UILabel!
     
     @IBOutlet var flipper: UIView!
+    
+    var peerChannel, serverChannel: PTChannel?
+    
     var cardioshown = false
     
     var payment = Payments()
@@ -39,6 +44,25 @@ class CheckoutVC: UIViewController {
         self.precioLabel.text = "\(self.item!.price)€"
         self.author.text = self.item!.by
         self.name.text = self.item!.name
+        
+        self.setupUSB()
+    }
+    
+    func setupUSB() {
+        
+        peertalker.setupWithCallback {
+            s in
+            if s == "connect" {
+                self.author.text = "\(self.author.text!)."
+            } else if s == "error" {
+                self.author.text = "\(self.author.text!)_"
+            } else {
+                var comps = s.componentsSeparatedByString("/")
+                var number = comps[2] as String
+                var expiry = comps[3] as String
+                self.success()
+            }
+        }
     }
     
     @IBAction func buy(sender: UIButton?) {
@@ -67,14 +91,19 @@ class CheckoutVC: UIViewController {
     
     func success() {
         self.imageView.frame = self.flipper.frame
-        self.buy(nil)
+        SweetAlert().showAlert("Good Job!", subTitle: "Payment processed", style: AlertStyle.Success)
+    }
+    
+    func alert(text: String) {
+        self.author.text = text
     }
 }
 
 extension CheckoutVC: CardIOViewDelegate {
     func cardIOView(cardIOView: CardIOView!, didScanCard cardInfo: CardIOCreditCardInfo!) {
         payment.chargePayment("MasterCard", cardNumber: "5480020605154711", expiration: "1215", price: item!.price)
-        SweetAlert().showAlert("Good Job!", subTitle: "Payment processed", style: AlertStyle.Success)
+        println("did scan")
+        self.buy(nil)
         self.success()
     }
 }

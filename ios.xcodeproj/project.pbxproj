@@ -56,6 +56,7 @@
 		E149F4721A73AD1300F46C87 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = E149F46F1A73AD1300F46C87 /* PTUSBHub.m */; };
 		E149F4CA1A73D55200F46C87 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149F4C91A73D55200F46C87 /* MainVC.swift */; };
 		E149F4CC1A73D5A700F46C87 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149F4CB1A73D5A700F46C87 /* Model.swift */; };
+		E19306461A740F3800B68A41 /* Peertalker.m in Sources */ = {isa = PBXBuildFile; fileRef = E19306451A740F3800B68A41 /* Peertalker.m */; };
 		E1B80D1A1A73E3E0005EE8AC /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B80D191A73E3E0005EE8AC /* CheckoutVC.swift */; };
 		E1B80D251A73E71B005EE8AC /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B80D241A73E71B005EE8AC /* libCardIO.a */; };
 		E1B80D271A73E931005EE8AC /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B80D261A73E931005EE8AC /* libc++.dylib */; };
@@ -155,6 +156,9 @@
 		E149F46F1A73AD1300F46C87 /* PTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUSBHub.m; sourceTree = "<group>"; };
 		E149F4C91A73D55200F46C87 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		E149F4CB1A73D5A700F46C87 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E19306431A74093800B68A41 /* PTExampleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTExampleProtocol.h; sourceTree = "<group>"; };
+		E19306441A740F3800B68A41 /* Peertalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalker.h; sourceTree = "<group>"; };
+		E19306451A740F3800B68A41 /* Peertalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Peertalker.m; sourceTree = "<group>"; };
 		E1B80D191A73E3E0005EE8AC /* CheckoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		E1B80D1C1A73E71B005EE8AC /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		E1B80D1D1A73E71B005EE8AC /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
@@ -355,7 +359,10 @@
 		E149F4671A73AD1300F46C87 /* peertalk */ = {
 			isa = PBXGroup;
 			children = (
+				E19306431A74093800B68A41 /* PTExampleProtocol.h */,
 				E149F4681A73AD1300F46C87 /* prefix.pch */,
+				E19306441A740F3800B68A41 /* Peertalker.h */,
+				E19306451A740F3800B68A41 /* Peertalker.m */,
 				E149F4691A73AD1300F46C87 /* PTChannel.h */,
 				E149F46A1A73AD1300F46C87 /* PTChannel.m */,
 				E149F46B1A73AD1300F46C87 /* PTPrivate.h */,
@@ -520,6 +527,7 @@
 				E149F4631A73AB1D00F46C87 /* SBJsonStreamWriterState.m in Sources */,
 				E149F4581A73AB1D00F46C87 /* CWSAPI.m in Sources */,
 				E1B80D1A1A73E3E0005EE8AC /* CheckoutVC.swift in Sources */,
+				E19306461A740F3800B68A41 /* Peertalker.m in Sources */,
 				E149F4511A73AB1D00F46C87 /* CWSAlternativeMerchantData.m in Sources */,
 				E149F4621A73AB1D00F46C87 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				E149F45A1A73AB1D00F46C87 /* NSString+Base64Encode.m in Sources */,

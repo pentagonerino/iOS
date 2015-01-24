@@ -59,6 +59,7 @@
 // Listen for connections on port and address, effectively starting a socket
 // server. For this to make sense, you should provide a onAccept block handler
 // or a delegate implementing ioFrameChannel:didAcceptConnection:.
+- (void)listen:(void(^)(NSError *error, PTAddress *address))callback;
 - (void)listenOnPort:(in_port_t)port IPv4Address:(in_addr_t)address callback:(void(^)(NSError *error))callback;
 
 // Send a frame with an optional payload and optional callback.
