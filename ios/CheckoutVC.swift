@@ -22,6 +22,8 @@ class CheckoutVC: UIViewController {
     @IBOutlet var flipper: UIView!
     var cardioshown = false
     
+    var payment = Payments()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.cardIO.delegate = self
@@ -71,7 +73,8 @@ class CheckoutVC: UIViewController {
 
 extension CheckoutVC: CardIOViewDelegate {
     func cardIOView(cardIOView: CardIOView!, didScanCard cardInfo: CardIOCreditCardInfo!) {
-        println("did scan")
+        payment.chargePayment("MasterCard", cardNumber: "5480020605154711", expiration: "1215", price: item!.price)
+        SweetAlert().showAlert("Good Job!", subTitle: "Payment processed", style: AlertStyle.Success)
         self.success()
     }
 }

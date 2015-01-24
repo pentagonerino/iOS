@@ -17,8 +17,12 @@
 @import CoreVideo;
 @import MobileCoreServices;
 
+#import "CWSCreditCard.h"
+#import "CWSTransactionData.h"
+
 #import "CWSAPI.h"
 #import "PTChannel.h"
 #import "PTPrivate.h"
 #import "PTUSBHub.h"
+
 #endif
