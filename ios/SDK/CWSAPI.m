@@ -439,7 +439,7 @@ static CWSAPI *sharedAPI = nil;
     
     if (!([response statusCode] == 200 || [response statusCode] == 201))
     {
-        InfoLog(@"response status code = %i", [response statusCode]);
+        InfoLog(@"response status code = %li", (long)[response statusCode]);
         InfoLog(@"error response: \n%@",[[[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding] autorelease]);
         //Error
         if(error != nil)
