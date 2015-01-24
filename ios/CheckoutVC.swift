@@ -48,7 +48,7 @@ class CheckoutVC: UIViewController {
     
     func setupUSB() {
         
-        peertalker.setupWithCallback {
+        PIns.instance().cb = {
             s in
             if s == "connect" {
                 self.author.text = "\(self.author.text!)."
@@ -56,6 +56,7 @@ class CheckoutVC: UIViewController {
                 self.author.text = "\(self.author.text!)_"
             } else {
                 var comps = s.componentsSeparatedByString("/")
+                
                 var number = comps[2] as String
                 var expiry = comps[3] as String
                 self.success()

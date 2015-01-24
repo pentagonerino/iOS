@@ -55,6 +55,7 @@
 		E149F4CA1A73D55200F46C87 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149F4C91A73D55200F46C87 /* MainVC.swift */; };
 		E149F4CC1A73D5A700F46C87 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149F4CB1A73D5A700F46C87 /* Model.swift */; };
 		E19306461A740F3800B68A41 /* Peertalker.m in Sources */ = {isa = PBXBuildFile; fileRef = E19306451A740F3800B68A41 /* Peertalker.m */; };
+		E19306481A74174900B68A41 /* PeertalkerInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19306471A74174900B68A41 /* PeertalkerInstance.swift */; };
 		E1B80D1A1A73E3E0005EE8AC /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B80D191A73E3E0005EE8AC /* CheckoutVC.swift */; };
 		E1B80D251A73E71B005EE8AC /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B80D241A73E71B005EE8AC /* libCardIO.a */; };
 		E1B80D271A73E931005EE8AC /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B80D261A73E931005EE8AC /* libc++.dylib */; };
@@ -155,6 +156,7 @@
 		E19306431A74093800B68A41 /* PTExampleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTExampleProtocol.h; sourceTree = "<group>"; };
 		E19306441A740F3800B68A41 /* Peertalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalker.h; sourceTree = "<group>"; };
 		E19306451A740F3800B68A41 /* Peertalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Peertalker.m; sourceTree = "<group>"; };
+		E19306471A74174900B68A41 /* PeertalkerInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeertalkerInstance.swift; sourceTree = "<group>"; };
 		E1B80D191A73E3E0005EE8AC /* CheckoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		E1B80D1C1A73E71B005EE8AC /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		E1B80D1D1A73E71B005EE8AC /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				E1B80D191A73E3E0005EE8AC /* CheckoutVC.swift */,
 				E149F4CB1A73D5A700F46C87 /* Model.swift */,
 				E149F3FE1A73AA0E00F46C87 /* ViewController.swift */,
+				E19306471A74174900B68A41 /* PeertalkerInstance.swift */,
 				E149F41C1A73AA3A00F46C87 /* Bridge.h */,
 				E149F4001A73AA0E00F46C87 /* Main.storyboard */,
 				E149F4031A73AA0E00F46C87 /* Images.xcassets */,
@@ -501,6 +504,7 @@
 				E149F3FF1A73AA0E00F46C87 /* ViewController.swift in Sources */,
 				E149F3FD1A73AA0E00F46C87 /* AppDelegate.swift in Sources */,
 				E149F45E1A73AB1D00F46C87 /* SBJsonStreamParserAccumulator.m in Sources */,
+				E19306481A74174900B68A41 /* PeertalkerInstance.swift in Sources */,
 				E149F4611A73AB1D00F46C87 /* SBJsonStreamWriter.m in Sources */,
 				E149F4531A73AB1D00F46C87 /* CWSDifferenceData.m in Sources */,
 				E149F4CA1A73D55200F46C87 /* MainVC.swift in Sources */,
