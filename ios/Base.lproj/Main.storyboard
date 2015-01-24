@@ -8,8 +8,14 @@
     <customFonts key="customFonts">
         <mutableArray key="LucidaGrande.ttc">
             <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
         </mutableArray>
         <mutableArray key="MaisonNeue-Medium.otf">
+            <string>MaisonNeueTRIAL-Medium</string>
+            <string>MaisonNeueTRIAL-Medium</string>
+            <string>MaisonNeueTRIAL-Medium</string>
+            <string>MaisonNeueTRIAL-Medium</string>
+            <string>MaisonNeueTRIAL-Medium</string>
             <string>MaisonNeueTRIAL-Medium</string>
             <string>MaisonNeueTRIAL-Medium</string>
             <string>MaisonNeueTRIAL-Medium</string>
@@ -161,44 +167,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsJ-Ok-3bt">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcn-pV-sh4" userLabel="fliped">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8PK-uj-6Pz" customClass="CardIOView">
+                                        <rect key="frame" x="0.0" y="-264" width="600" height="792"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNn-O3-c64">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="bAE-qH-ZmO"/>
-                                    <constraint firstAttribute="width" constant="200" id="ydH-yE-gAq"/>
+                                    <constraint firstAttribute="centerY" secondItem="8PK-uj-6Pz" secondAttribute="centerY" id="71H-jl-T0A"/>
+                                    <constraint firstItem="kNn-O3-c64" firstAttribute="leading" secondItem="Gcn-pV-sh4" secondAttribute="leading" id="8IJ-Ac-j0H"/>
+                                    <constraint firstAttribute="height" secondItem="8PK-uj-6Pz" secondAttribute="height" multiplier="1:3" id="Djj-q7-BK8"/>
+                                    <constraint firstAttribute="centerX" secondItem="8PK-uj-6Pz" secondAttribute="centerX" id="DwU-zL-9LJ"/>
+                                    <constraint firstItem="kNn-O3-c64" firstAttribute="height" secondItem="Gcn-pV-sh4" secondAttribute="height" id="I8k-6b-0jp"/>
+                                    <constraint firstItem="kNn-O3-c64" firstAttribute="width" secondItem="Gcn-pV-sh4" secondAttribute="width" id="KOS-8G-lCH"/>
+                                    <constraint firstItem="kNn-O3-c64" firstAttribute="top" secondItem="Gcn-pV-sh4" secondAttribute="top" id="NDt-Fz-mx7"/>
+                                    <constraint firstAttribute="width" secondItem="8PK-uj-6Pz" secondAttribute="width" id="ga4-01-eT2"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOw-ho-gNv">
-                                <rect key="frame" x="246" y="89" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOw-ho-gNv">
+                                <rect key="frame" x="30" y="314" width="67" height="25"/>
+                                <fontDescription key="fontDescription" name="MaisonNeueTRIAL-Medium" family="Maison Neue TRIAL" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-Kh-zGQ">
-                                <rect key="frame" x="246" y="127" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EM-ki-fCy">
+                                <rect key="frame" x="30" y="294" width="62" height="15"/>
+                                <fontDescription key="fontDescription" name="MaisonNeueTRIAL-Medium" family="Maison Neue TRIAL" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVw-1z-32v">
-                                <rect key="frame" x="246" y="170" width="74" height="30"/>
-                                <state key="normal" title="Buy 1050€">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTOR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5M-AQ-2Ku">
+                                <rect key="frame" x="30" y="369" width="48" height="15"/>
+                                <fontDescription key="fontDescription" name="MaisonNeueTRIAL-Medium" family="Maison Neue TRIAL" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRECIO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubq-C9-aFd">
+                                <rect key="frame" x="30" y="538" width="53" height="15"/>
+                                <fontDescription key="fontDescription" name="MaisonNeueTRIAL-Medium" family="Maison Neue TRIAL" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-Kh-zGQ">
+                                <rect key="frame" x="30" y="389" width="78" height="25"/>
+                                <fontDescription key="fontDescription" name="MaisonNeueTRIAL-Medium" family="Maison Neue TRIAL" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100€" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9va-yE-J4J">
+                                <rect key="frame" x="173" y="523" width="64" height="30"/>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wT-4s-Q9N">
+                                <rect key="frame" x="370" y="508" width="200" height="62"/>
+                                <state key="normal" image="buy">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buy:" destination="P5S-8u-Uxf" eventType="touchUpInside" id="m0L-GG-bTP"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dmd-7M-yKh" customClass="CardIOView">
-                                <rect key="frame" x="0.0" y="249" width="200" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u5M-AQ-2Ku" firstAttribute="top" secondItem="kOw-ho-gNv" secondAttribute="bottom" constant="30" id="1cf-yc-dVe"/>
+                            <constraint firstItem="Gcn-pV-sh4" firstAttribute="leading" secondItem="RdO-3t-PYP" secondAttribute="leading" id="4Gb-b2-Pfg"/>
+                            <constraint firstItem="MHD-Bw-G7y" firstAttribute="top" secondItem="6wT-4s-Q9N" secondAttribute="bottom" constant="30" id="66c-ds-3KY"/>
+                            <constraint firstItem="ubq-C9-aFd" firstAttribute="leading" secondItem="u5M-AQ-2Ku" secondAttribute="leading" id="E48-Gg-EkM"/>
+                            <constraint firstItem="u5M-AQ-2Ku" firstAttribute="leading" secondItem="7EM-ki-fCy" secondAttribute="leading" id="Eat-1W-LMB"/>
+                            <constraint firstItem="Gcn-pV-sh4" firstAttribute="top" secondItem="Pgj-cM-kdC" secondAttribute="bottom" id="MYh-3E-UuD"/>
+                            <constraint firstItem="Gcn-pV-sh4" firstAttribute="height" secondItem="RdO-3t-PYP" secondAttribute="height" multiplier="44:100" id="Pp0-d5-5WP"/>
+                            <constraint firstItem="u5M-AQ-2Ku" firstAttribute="leading" secondItem="kOw-ho-gNv" secondAttribute="leading" id="Snw-KW-7py"/>
+                            <constraint firstItem="kOw-ho-gNv" firstAttribute="top" secondItem="7EM-ki-fCy" secondAttribute="bottom" constant="5" id="Sz5-9Z-4oj"/>
+                            <constraint firstItem="7EM-ki-fCy" firstAttribute="leading" secondItem="RdO-3t-PYP" secondAttribute="leading" constant="30" id="WeH-Gd-Ord"/>
+                            <constraint firstItem="u5M-AQ-2Ku" firstAttribute="leading" secondItem="hWT-Kh-zGQ" secondAttribute="leading" id="Wm3-6K-fSZ"/>
+                            <constraint firstItem="9va-yE-J4J" firstAttribute="bottom" secondItem="ubq-C9-aFd" secondAttribute="bottom" id="X29-fI-n1I"/>
+                            <constraint firstItem="9va-yE-J4J" firstAttribute="leading" secondItem="ubq-C9-aFd" secondAttribute="trailing" constant="90" id="bQE-XE-Gtr"/>
+                            <constraint firstAttribute="trailing" secondItem="6wT-4s-Q9N" secondAttribute="trailing" constant="30" id="cn6-N0-4pd"/>
+                            <constraint firstItem="MHD-Bw-G7y" firstAttribute="top" secondItem="ubq-C9-aFd" secondAttribute="bottom" constant="47.5" id="iJ8-dv-2Jm"/>
+                            <constraint firstItem="hWT-Kh-zGQ" firstAttribute="top" secondItem="u5M-AQ-2Ku" secondAttribute="bottom" constant="5" id="iRs-Ji-3p8"/>
+                            <constraint firstItem="Gcn-pV-sh4" firstAttribute="width" secondItem="RdO-3t-PYP" secondAttribute="width" id="jdj-tS-SX1"/>
+                            <constraint firstItem="7EM-ki-fCy" firstAttribute="top" secondItem="Gcn-pV-sh4" secondAttribute="bottom" constant="30" id="opW-RW-pwA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="author" destination="hWT-Kh-zGQ" id="sEF-RK-d7j"/>
-                        <outlet property="buyButton" destination="GVw-1z-32v" id="0mY-5T-EeO"/>
-                        <outlet property="cardIO" destination="Dmd-7M-yKh" id="5cF-bf-Fxc"/>
-                        <outlet property="imageView" destination="rsJ-Ok-3bt" id="Nao-Tf-Hkb"/>
+                        <outlet property="buttonBuy" destination="6wT-4s-Q9N" id="ZXc-An-UsF"/>
+                        <outlet property="cardIO" destination="8PK-uj-6Pz" id="SAO-3S-OIG"/>
+                        <outlet property="flipper" destination="Gcn-pV-sh4" id="DRF-1O-F9O"/>
+                        <outlet property="imageView" destination="kNn-O3-c64" id="XPp-eZ-eJk"/>
                         <outlet property="name" destination="kOw-ho-gNv" id="pJq-ZO-Vb6"/>
+                        <outlet property="precioLabel" destination="9va-yE-J4J" id="NDf-YC-ZIs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q91-7J-yy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,5 +275,6 @@
     </scenes>
     <resources>
         <image name="bg" width="1024" height="768"/>
+        <image name="buy" width="200" height="62"/>
     </resources>
 </document>
