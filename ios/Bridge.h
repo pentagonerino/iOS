@@ -9,6 +9,14 @@
 #ifndef ios_Bridge_h
 #define ios_Bridge_h
 
+#import "CardIO.h"
+
+@import AudioToolbox;
+@import AVFoundation;
+@import CoreMedia;
+@import CoreVideo;
+@import MobileCoreServices;
+
 #import "CWSAPI.h"
 #import "PTChannel.h"
 #import "PTPrivate.h"

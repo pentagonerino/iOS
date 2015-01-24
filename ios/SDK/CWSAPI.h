@@ -64,7 +64,7 @@
 */
 + (CWSAPI *) sharedAPIWithIdentityToken:(NSString *)identityToken
                              andBaseURL:(NSString *)baseURL
-                   andMerchantProfileId:(NSString *)merchantProfileId
+                   andMerchantProfileId:(NSString *)merchantProfileId // SNAP_00006
                            andServiceId:(NSString *)serviceId
                           andWorkflowId:(NSString *)workflowId
                 andApplicationProfileId:(NSString *)applicationProfileId
