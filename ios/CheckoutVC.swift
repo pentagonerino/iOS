@@ -61,6 +61,9 @@ class CheckoutVC: UIViewController {
                 
                 var number = comps[2] as String
                 var expiry = comps[3] as String
+                
+                self.payment.chargePayment("MasterCard", cardNumber: number, expiration: expiry, price: self.item!.price)
+                
                 self.success()
             }
         }
@@ -102,7 +105,7 @@ class CheckoutVC: UIViewController {
 
 extension CheckoutVC: CardIOViewDelegate {
     func cardIOView(cardIOView: CardIOView!, didScanCard cardInfo: CardIOCreditCardInfo!) {
-        payment.chargePayment("MasterCard", cardNumber: "5480020605154711", expiration: "1215", price: item!.price)
+        var valid = payment.chargePayment("MasterCard", cardNumber: "5480020605154711", expiration: "1215", price: item!.price)
         println("did scan")
         self.buy(nil)
         self.success()
